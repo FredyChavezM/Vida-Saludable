@@ -1,0 +1,912 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width:100%;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+    padding:1em;
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-size: 1em;
+}
+
+header {
+    width: 100%;
+    background:rgb(244,173,0);
+    color: white;
+    text-align: center;
+}
+
+section{
+    padding:2em;
+}
+
+#hamburguesa {
+    display: none;
+}
+
+
+#menu {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+}
+
+#barra {
+    position: static;
+    height: auto;
+    text-align: right;
+    background: none;
+}
+
+
+
+.logo{
+    float: left;
+    display:block;
+}
+
+.logo img{
+    padding:0.5em;
+}
+
+.navbar {
+    padding: 1em;
+    background: rgb(244,173,0);
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%; 
+    height:15vh;
+    text-align: right;
+}
+
+
+
+nav ul li {
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+}
+
+nav ul li a:hover {
+    background:rgb(178,123,0);
+    color: rgb(244,173,0);
+}
+
+
+
+
+.banner{
+    height:85vh;
+    background: url(img/banner1pc.png) no-repeat;
+    background-position:center;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.banner h1{
+    padding:3em 1em 0;
+    color:white;
+    font-size: 4em;
+    margin: 0 auto;
+}
+
+.banner h3{
+    padding:1em;
+    color:white;
+    margin:0 auto;
+}
+
+.enviado{
+    background-color: rgba(244,173,0,0.8);
+    margin: auto;
+    padding:2em;
+}
+
+.enviado h1{
+    padding:1em 1em 0.4em;
+}
+
+.enviado p{
+    padding:0 0 2em 0
+}
+
+
+.btn{
+    background:rgba(0,0,0,0.1);
+    border:2px solid rgba(244,173,0,0.4);
+    color:white;
+    margin:auto;
+    width:80px;
+    height:40px;
+}
+
+.btn:hover{
+    background:rgba(178,123,0,0.7);
+    border:2px solid rgba(244,173,0,0.9);
+}
+
+.sect1 {
+    display:flex;
+    flex-direction:row-reverse;
+    margin:3em auto;
+    padding:1em;
+    width:70%;
+    background:rgb(121,37,15);
+    color:white;
+    }
+
+.sect1 h2{
+    padding:1em 0 0 0
+}
+
+.sect1 div {
+    flex: 1 1.5 auto;
+    padding:0 1em;
+}
+
+.sect1 h2 {
+    margin:auto;
+}
+
+.sect1 figure{
+    padding:2em
+}
+
+figure{
+    width:100%;
+    height:auto;
+}
+
+
+
+.secvid {
+    background:rgb(244,173,0);
+}
+
+p{
+    font-size:1em
+}
+
+.video {
+    width: 80vw;
+    height: calc(80vw * 315 / 560);
+    max-width: 560px;
+    max-height: 315px;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.pastillas{
+    width:100%;
+    text-align:center;
+    display:flex;
+    flex-direction:row;
+
+}
+
+.pastillas figure{
+    padding:1.5em;
+}
+
+.pastillas figcaption{
+    padding:1em;
+    text-align: left;
+}
+
+#porque{
+    padding:4em 0;
+}
+
+
+img {
+    max-width:100%;
+}
+
+#aprende{
+    background: url(img/fondo.png) no-repeat;
+    background-position:top;
+    width:100%;
+    padding:0;
+}
+
+
+#aprende div:first-child{
+
+    margin:auto;
+    text-align:left;
+}
+
+.sect3{
+    display:flex;
+    flex-wrap: wrap;
+    width:85vw
+}
+
+.fig {
+    width:50%;
+    float:left;
+    display:block;
+    padding:2em 0;
+
+}
+
+.fig figcaption {
+    padding: 0 2em  ;
+    width:80%;
+    font-size: 0.8em;
+}
+
+.sect3 h3{
+    text-align: left;
+    padding:1em 0;
+}
+
+#aprende article{
+    padding:2em 0;
+    background-color: rgb(249,215,52);
+}
+
+#aprende h2,h3{
+    padding:1em 0;
+    text-align: left;
+}
+
+.respira {
+    display:flex;
+    flex-wrap: wrap;
+    width:85vw;
+    padding:0;
+
+}
+
+.respira div:nth-child(2n){
+    flex:50%;
+    text-align: left;
+}
+
+.respira figure{
+    flex:50%;
+    padding:1em
+}
+
+
+
+
+/* FORMULARIO */
+
+
+form {
+    width:100%;
+    height:100%;
+    padding: 2.5em;
+    display:flex;
+    flex-direction: column;
+    background-color:rgb(244,173,0);
+}
+.nombre, .tel, .mail{
+    display:flex;
+    margin: .5em 0;
+    font-size:0;
+    padding:2em;
+    flex-wrap: nowrap;
+}
+
+
+
+input {
+    flex:auto;
+    padding:1em;
+    margin:1em;
+    width:100%;;
+}
+
+
+.mensj{
+    font-size:0;
+    color:red;
+    display: flex;
+    flex-direction: column;
+}
+
+.mensj textarea{
+    flex:auto;
+    margin:1em;
+    padding:1em;
+}
+
+.envio {
+    display:block;
+    text-align: right;
+}
+
+
+input[type="submit"] {
+    padding: .6em 1.3em;
+    background-color:rgb(121,37,15);
+    color: white;
+    border: 1px solid #aaa;
+    width:40%;
+    height:3em;
+}
+
+input[type="reset"] {
+    padding: .6em 1em;
+    background-color: white;
+    border: 1px solid #aaa;
+    margin-right: .3em;
+    flex:2rem;
+}
+
+#contacto{
+    display:flex;
+    flex-wrap: wrap;
+    margin:auto;
+    width:85vw;
+}
+
+#contacto article:first-child{
+    width:40%;
+    height:100%;
+    border:1px solid black;
+    padding:2em;
+    margin:0 auto;
+}
+
+span{
+    font-weight: bold;
+}
+
+#contacto p{
+    margin-bottom:3em;
+}
+
+footer{
+    width:100%;
+    height:170px;
+    background-color: rgb(244, 173, 0)    ;
+}
+
+footer p{
+    padding-bottom: 1em;
+}
+
+footer div:first-child{
+    width:85vw;
+    margin:auto;
+    height:100%;
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+footer .footcolum {
+    flex-direction: column;
+    padding:2em;
+    width:50%;
+}
+
+footer .footcolum:nth-child(2n) {
+    flex-direction: row;
+    display:flex;
+    justify-content: flex-end;
+    width:50%;
+}
+
+footer .footcolum a{
+    padding:0 1em;
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 863px) and (max-width:1116px ){
+    #que{
+        width:100%;
+        padding:0;
+    }
+    .sect1{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        padding:2em;
+        }
+
+    .sect1 figure{
+        flex:1;
+        text-align: center;
+        width:100%;}
+
+
+        #contacto {
+            flex-wrap:wrap;
+        }
+        
+  
+        #contacto article:first-child{
+            width:100%;
+            border:1px solid black;
+            padding:2em;
+            margin:auto;
+        }
+        
+        .form{
+            margin:auto;
+            width:100%;
+            background-color: red;
+            }
+    
+        form{
+            width:100%;
+            padding:0;
+        }
+
+        .form{
+            flex:1;
+        }
+
+        footer{
+            margin-top:3em;
+            height:100%;
+        }
+            
+        footer div:first-child{
+            width:100%;
+            padding:1em;
+            margin:auto;
+            display:flex;
+            flex-direction:row
+            
+        }
+    
+        footer .footcolum:first-of-type{
+            padding:1em;
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        footer .footcolum:nth-child(2n) {
+            flex-direction: row;
+            margin:1em 0;
+            display:flex;
+            text-align: center;
+            justify-content: center;
+        }
+    
+        
+}
+
+
+
+
+    
+
+
+
+
+@media screen and (min-width: 577px) and (max-width: 862px){
+
+    #que{
+        width:100%;
+        padding:0;
+    }
+    .sect1{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        padding:2em;
+        }
+
+    .sect1 figure{
+        flex:1;
+        text-align: center;
+        width:100%;}
+
+
+    #hamburguesa{
+        display:block;
+    }
+    
+    #hamburguesa li a:first-of-type{
+        opacity: 0;
+    }
+
+    #hamburguesa li {
+        list-style: none;
+        float: right;
+
+    }
+    #hamburguesa li {
+        background: url("img/menu.png") no-repeat center center;
+        background-size:contain;
+        display: block;
+        height: 2.5em;
+        
+    }
+
+    #hamburguesa li:last-child {
+        display: none;
+    }
+
+    
+    .pastillas{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .pastillas figure{
+        width:50%;;
+    }
+
+    
+    nav:target #barra {
+        right: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav:target #hamburguesa li:first-child {
+        display: none;
+    }
+
+    nav:target #hamburguesa li:last-child {
+        display: block;
+    }
+
+    .respira{
+        display:flex;
+        flex-direction: column;
+    }
+        
+    #barra {
+        width: 100%;
+        height: calc(100vh - 4em);
+        position: absolute;
+        top: 5em;
+        right: -100%;
+        background: rgba(244,173,0,1);
+        transition: right .5s ease;
+    }
+
+    #barra li {
+        list-style: none;
+        margin: 1em;
+        width:90%;
+        display: inline-block;
+    }
+
+    #barra li a {
+        text-decoration: none;
+        display: block;
+        background: rgb(198, 137,24);
+        color: white;
+        text-align: center;
+        line-height: 2em;
+}
+
+    #barra li a:hover{
+        background:white;
+        color:rgb(178,123,0)
+    }
+
+
+    .banner{
+        background: url(img/banner1tablet_3.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+
+    .banner h1{
+        padding:2em 1em 0;
+        color:white;
+        font-size: 4em;
+        margin: 0 auto;
+    }
+
+    .banner h3{
+        padding:1em;
+        color:white;
+        margin:0 auto;
+    }
+
+
+ 
+    
+    .pastillas{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contacto article:first-child{
+        width:100%;
+        border:1px solid black;
+        padding:2em;
+        margin:auto;
+    }
+    
+    .form{
+        margin:auto;
+        width:100%;
+        background-color: red;
+        }
+
+    form{
+        width:100%;
+        padding:0;
+    }
+
+    footer{
+        margin-top:3em;
+        height:100%;
+    }
+        
+    footer div:first-child{
+        width:100%;
+        padding:1em;
+        margin:auto;
+        display:flex;
+        flex-direction:row
+        
+    }
+
+    footer .footcolum:first-of-type{
+        padding:1em;
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    footer .footcolum:nth-child(2n) {
+        flex-direction: row;
+        margin:1em 0;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 576px){
+
+
+    #hamburguesa{
+        display:block;
+    }
+    
+    #hamburguesa li a:first-of-type{
+        opacity: 0;
+    }
+
+    #hamburguesa li {
+        list-style: none;
+        float: right;
+
+    }
+    #hamburguesa li {
+        background: url("img/menu.png") no-repeat center center;
+        background-size:contain;
+        display: block;
+        height: 2.5em;
+        
+    }
+
+    #hamburguesa li:last-child {
+        display: none;
+    }
+
+    
+    nav:target #barra {
+        right: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav:target #hamburguesa li:first-child {
+        display: none;
+    }
+
+    nav:target #hamburguesa li:last-child {
+        display: block;
+    }
+
+    
+        
+    #barra {
+        width: 100%;
+        height: calc(100vh - 4em);
+        position: absolute;
+        top: 5em;
+        right: -100%;
+        background: rgba(244,173,0,1);
+        transition: right .5s ease;
+    }
+
+    #barra li {
+        list-style: none;
+        margin: 1em;
+        width:90%;
+        display: inline-block;
+    }
+
+    #barra li a {
+        text-decoration: none;
+        display: block;
+        background: rgb(198, 137,24);
+        color: white;
+        text-align: center;
+        line-height: 2em;
+}
+
+    #barra li a:hover{
+        background:white;
+        color:rgb(178,123,0)
+    }
+
+
+    .banner{
+        background: url(img/banner1mobile.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+
+    .banner h1{
+        padding:2em 1em 0;
+        color:white;
+        font-size: 4em;
+        margin: 0 auto;
+    }
+
+    .banner h3{
+        padding:1em;
+        color:white;
+        margin:0 auto;
+    }
+
+
+    #aprende{
+        background: none;
+    } 
+
+
+    .sect1{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        margin:auto;
+        margin-bottom:3em;
+        padding:2em;
+    }
+
+    .sect1 figure{
+        text-align: center;
+        margin:auto;
+    }
+
+    .sect3{
+        display:flex;
+        flex-direction: column;
+        background: url(img/fondomobile.png) no-repeat;
+        background-size: contain;
+    }
+
+    .fig{
+        width:100%;
+        margin:auto;
+        text-align: center;
+    }
+
+    .respira{
+        display:flex;
+        flex-direction: column;
+    }
+
+
+    .fig figcaption{
+        width:100%;
+        padding:1em 0;
+    }
+
+    section{
+        padding:0;
+    }
+
+    .pastillas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contacto {
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+        
+    }
+
+    #contacto article:first-child{
+        width:100%;
+        margin:auto;
+        padding:1.5em;
+        border:none
+    }
+
+    .form{
+        margin:auto;
+        width:100%;
+        }
+
+    form{
+        width:100%;
+        padding:0;
+    }
+
+    footer{
+        margin-top:3em;
+        height:100%;
+    }
+        
+    footer div:first-child{
+        width:100%;
+        margin:auto;
+        display:flex;
+        flex-direction:row
+        
+    }
+
+    footer .footcolum:first-of-type{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    footer .footcolum:nth-child(2n) {
+        flex-direction: column;
+        padding:0;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+}

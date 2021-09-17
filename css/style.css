@@ -1,0 +1,149 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    Line-height:1.1rem;
+}
+
+.navbar {
+    background-color: orange;
+}
+
+.nav-link{
+    color:white;
+    text-align: right;
+}
+
+.nav-link:hover{
+    color:#79250F;
+    transition: .3s;
+}
+
+.nover{
+    font-size: 0;
+}
+
+section{
+    margin:4em 0;
+}
+
+.collapse{
+    flex-grow:0
+}
+
+img{
+    max-width:100%;
+    height:auto;
+
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#que_es .row{
+    background-color: #79250F;
+    color:white;
+}
+
+
+
+.secvid {
+    background:rgb(244,173,0);
+}
+
+
+.video {
+    width: 80vw;
+    height: calc(80vw * 315 / 560);
+    max-width: 560px;
+    max-height: 315px;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.figure-caption {
+    font-size: .6rem;
+    padding:.7em;
+    text-align: justify;
+}
+
+.figure{
+    text-align: center;
+    margin:auto;
+}
+
+#filosofia{
+    background-color:#FFA500 ;
+    padding:2em;
+}
+
+.text-white{
+    color:white
+}
+
+#aprende {
+    background-image: url(/img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:initial;
+}
+
+
+
+form {
+    width:100%;
+    height:100%;
+    padding: 2em;
+    background-color:rgba(244,173,0,.8);
+}
+
+input[type="submit"] {
+    padding: .6em 1.3em;
+    background-color:rgb(121,37,15);
+    color: white;
+    width:40%;
+    height:3em;
+}
+
+input[type="reset"] {
+    padding: .6em 1em;
+    background-color: white;
+    margin-right: .3em;
+    flex:2rem;
+}
+
+footer{
+    background-color: #79250F;
+    height:auto;
+    color:white;
+}
+
+.list-group-item{
+    background-color:rgba(0,0,0,0);
+    border:none;
+    color:white;
+}
+
+.list-group-item-action:hover{
+    background-color:rgba(0,0,0,0);
+}
+
+@media screen and (max-width: 576px){
+    
+    #que_es .px-5{
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important
+    }
+    
+
+}
